@@ -1,3 +1,4 @@
+import 'package:afforable_housing/components/navbar.dart';
 import 'package:flutter/material.dart';
 import 'package:image_carousel/image_carousel.dart';
 
@@ -9,19 +10,16 @@ class SuggestionsPage extends StatefulWidget {
 class _SuggestionsPageState extends State<SuggestionsPage> {
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
-      appBar: new AppBar(
-        title: new Text('Suggestions'),
-      ),
-      body: new ImageCarousel(
+    return new Center(
+      child: new Text('Suggestions'),
+    );
+
+    /*new ImageCarousel(
         <ImageProvider>[
           new NetworkImage('https://static.pexels.com/photos/186077/pexels-photo-186077.jpeg'),
-          new NetworkImage('http://auto.ferrari.com/en_EN/wp-content/uploads/sites/5/2017/08/ferrari-portofino-reveal-2017-featured-new.jpg'),
-          new NetworkImage('http://www.hilversum.ferraridealers.com/siteasset/ferraridealer/54f07ac8c35b6/961/420/selected/0/0/0/54f07ac8c35b6.jpg'),
-        ],
-        interval: new Duration(seconds: 60),
-      ),
-    );
+          new NetworkImage('https://images.pexels.com/photos/221540/pexels-photo-221540.jpeg'),
+          new NetworkImage('https://images.pexels.com/photos/243722/pexels-photo-243722.jpeg'),
+        ]);*/
   }
 }
 
