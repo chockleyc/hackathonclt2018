@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Housing Connect CLT',
       theme: theme,
       home: new HomePage(),
       routes: <String, WidgetBuilder> {

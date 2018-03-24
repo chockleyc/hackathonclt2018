@@ -19,8 +19,12 @@ class _HouseDetailsPageState extends State<HouseDetailsPage> {
   Widget build(BuildContext context) {
     return new Scaffold(
       appBar: new AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Colors.transparent,
+        iconTheme: new IconThemeData(color: Colors.black),
         elevation: 0.0,
+        actions: <Widget>[
+          new Icon(Icons.thumb_up),
+        ],
       ),
       body: new ListView(
         children: [
