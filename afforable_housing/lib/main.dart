@@ -9,7 +9,7 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
 
   final ThemeData theme =  new ThemeData(
-    primarySwatch: Colors.blue,
+    primaryColor: Colors.blue,
   );
 
 
