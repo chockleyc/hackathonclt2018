@@ -10,7 +10,7 @@ void main() => runApp(new MyApp());
 class MyApp extends StatelessWidget {
 
   final ThemeData theme =  new ThemeData(
-    primaryColor: Colors.blue,
+    primaryColor: Colors.deepOrange[400],
   );
 
 
@@ -20,9 +20,9 @@ class MyApp extends StatelessWidget {
     return new MaterialApp(
       title: 'Flutter Demo',
       theme: theme,
-      home: new QuestionPage(),
+      home: new HomePage(),
       routes: <String, WidgetBuilder> {
-        '/search': (BuildContext context) => new SearchPage(),
+        '/search': (BuildContext context) => new QuestionPage(),
         '/suggestions': (BuildContext context) => new SuggestionsPage(),
         '/profile' : (BuildContext context) => new ProfilePage(),
       },

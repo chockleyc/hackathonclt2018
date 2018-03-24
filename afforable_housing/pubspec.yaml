@@ -3,15 +3,6 @@ description: A new Flutter project.
 
 dependencies:
   flutter:
-    assets:
-          - assets/option1.png
-          - assets/option2.png
-          - assets/option3.png
-          - assets/option4.png
-          - assets/option5.png
-          - assets/Apartment.png
-          - assets/House.png
-          - assets/Townhouse.png
     sdk: flutter
 
 

@@ -1,4 +1,5 @@
 import 'package:afforable_housing/pages/profile.dart';
+import 'package:afforable_housing/pages/questions.dart';
 import 'package:afforable_housing/pages/search.dart';
 import 'package:afforable_housing/pages/suggestions.dart';
 import 'package:flutter/material.dart';
@@ -29,10 +30,12 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Thor App'),
+        title: new Text('Connect', style: new TextStyle(color: Colors.black),),
+        backgroundColor: Colors.white,
+        //elevation: 0.0,
         actions: <Widget>[
           new IconButton( // action button
-            icon: new Icon(Icons.add_alert),
+            icon: new Icon(Icons.add_alert, color: Colors.black,),
             onPressed: () {
 
             },
@@ -42,18 +45,19 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
       body: new TabBarView(
           controller: controller,
           children: <Widget>[
-            new SearchPage(),
+            new QuestionPage(),
             new SuggestionsPage(),
             new ProfilePage(),
           ]
       ),
       bottomNavigationBar: new Material(
-        color: Colors.blue,
+        color: Theme.of(context).primaryColor,
+        shadowColor: Theme.of(context).accentColor,
         child: new TabBar(
             controller: controller,
             tabs: <Tab>[
-              new Tab(icon: new Icon(Icons.search)),
-              new Tab(icon: new Icon(Icons.favorite_border)),
+              new Tab(icon: new Icon(Icons.question_answer)),
+              new Tab(icon: new Icon(Icons.star)),
               new Tab(icon: new Icon(Icons.person)),
             ]
         ),
