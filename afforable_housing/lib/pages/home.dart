@@ -26,9 +26,18 @@ class _HomePageState extends State<HomePage> with SingleTickerProviderStateMixin
 
   @override
   Widget build(BuildContext context) {
+
     return new Scaffold(
       appBar: new AppBar(
-        title: new Text('Pages'),
+        title: new Text('Thor App'),
+        actions: <Widget>[
+          new IconButton( // action button
+            icon: new Icon(Icons.add_alert),
+            onPressed: () {
+
+            },
+          ),
+        ],
       ),
       body: new TabBarView(
           controller: controller,
